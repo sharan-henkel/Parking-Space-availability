@@ -30,7 +30,7 @@ st.title("Parking Space Availability Predictor")
 st.markdown("##### This app, developed by Sharan, utilizes a CatBoost machine learning model trained on data from 2016 to 2020 to generate parking predictions. Please note that the model does not account for external factors such as weather conditions, construction work, public transport disruptions, or special events.")
 
 location = st.selectbox("Enter the location where you are seeking parking", ["freiburgschlossberg","freiburgambahnhof"])
-input_date = st.date_input("Select a Date", value=pd.to_datetime("2021-11-16"))
+input_date = st.date_input("Select a Date", value=pd.to_datetime("2021-12-09"))
 input_time = st.time_input("Select a Time", value=pd.to_datetime("2024-01-01 00:00").time())
 confidence_interval = st.selectbox("Select Confidence Interval", options=['90%', '95%', '99%'])
 
